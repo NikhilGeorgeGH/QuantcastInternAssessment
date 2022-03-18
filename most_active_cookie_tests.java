@@ -28,7 +28,7 @@ public class most_active_cookie_tests {
     }
 
     public static void incorrectInputTest() {
-    	// Tests basic functionality
+    	// Tests if correct error message displays
         String[] input = new String[2];
         input[0] = "cookie_log.csv";
         input[1] = "-d";
@@ -36,7 +36,7 @@ public class most_active_cookie_tests {
     }
 
     public static void incorrectInputTest2() {
-    	// Tests basic functionality
+    	// Tests if correct error message displays
         String[] input = new String[3];
         input[0] = "cookie_log.csv";
         input[1] = "-f";
@@ -45,7 +45,7 @@ public class most_active_cookie_tests {
     }
 
     public static void emptyInputTest() {
-    	// Tests basic functionality
+    	// Tests if doesn't error on empty input
         String[] input = new String[3];
         input[0] = "empty_log.csv";
         input[1] = "-d";
@@ -54,6 +54,7 @@ public class most_active_cookie_tests {
     }
 
     public static void coverageTest() {
+    	// Larger input
     	String[] input = new String[3];
         input[0] = "fullday_log.csv";
         input[1] = "-d";
@@ -62,6 +63,7 @@ public class most_active_cookie_tests {
     }
 
     public static void coverageTest2() {
+    	// Larger input
     	String[] input = new String[3];
         input[0] = "fullerday_log.csv";
         input[1] = "-d";
@@ -70,6 +72,7 @@ public class most_active_cookie_tests {
     }
 
     public static void coverageTest3() {
+    	// Larger input
     	String[] input = new String[3];
         input[0] = "fullestday_log.csv";
         input[1] = "-d";
